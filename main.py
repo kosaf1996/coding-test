@@ -2,6 +2,11 @@ import Greedy
 import Implementation
 import DFS_BFS
 import Sorting
+import Binary_Search
+import Dynamic
+import Shortest_path
+import Graph
+
 def main ():
     print('이 프로그램은 "이것이 취업을 위한 코딩테스트다 with 파이썬" 책의 내용을 프로그램화 한 내용입니다. ')
     while True:
@@ -10,6 +15,10 @@ def main ():
         print('2. Implementation(구현)')
         print('3. DFS/BFS(탐색 알고리즘)')
         print('4. Sorting(정렬)')
+        print('5. 이진탐색')
+        print('6. 다이나믹 프로그래밍')
+        print('7. 최단 경로')
+        print('8. 그래프 이론')
         n = int(input())
 
         if n == 1:
@@ -97,6 +106,7 @@ def main ():
             print('2. 삽입정렬')
             print('3. 위에서 아래로 ')
             print('4. 성적인 낮은 순서로 학생 출력하기')
+            print('5. 두 배열의 원소 교체')
             print('99.돌아가기')
 
             a =int(input())
@@ -108,6 +118,77 @@ def main ():
                 Sorting.UpDown()
             elif a ==4:
                 Sorting.Student()
+            elif a ==5:
+                Sorting.Change()        
+            elif a ==99:
+                Greedy.turn()
+        
+        elif n == 5:
+            print('-----------------------이진 탐색------------------------')
+            print('1. 순차 탐색')
+            print('2. 이진 탐색')
+            print('3. 부품 탐색')
+            print('4. 떡볶이 떡 만들기')
+            print('99.돌아가기')
+
+            a =int(input())
+            if a == 1:
+                Binary_Search.sequence_input()
+            elif a == 2:
+                Binary_Search.binary_input()
+            elif a == 3:
+                Binary_Search.parts_input()
+            elif a == 4:
+                Binary_Search.rice_cake()
+            elif a ==99:
+                Greedy.turn()
+
+        elif n == 6:
+            print('-----------------------다이나믹 프로그래밍------------------------')
+            print('1. 피보나치 수열')
+            print('2. 개미 전사')
+            print('3. 바닥 공사')
+            print('4. 효율적인 화폐 구성')
+
+            print('99.돌아가기')
+
+            a =int(input())
+            if a == 1:
+                Dynamic.fibo_call()
+            elif a == 2:
+                Dynamic.ant()
+            elif a == 3:
+                Dynamic.floor()
+            elif a == 4:
+                Dynamic.money()
+            elif a ==99:
+                Greedy.turn()
+        
+        elif n == 7:
+            print('-----------------------최단 경로------------------------')
+            print('1. ')
+            print()
+
+            print('99.돌아가기')
+
+            a =int(input())
+            if a == 1:
+                Dynamic.fibo_call()
+
+            elif a ==99:
+                Greedy.turn()
+
+        elif n == 8:
+            print('-----------------------그래프 이론------------------------')
+            print('1. ')
+            print()
+
+            print('99.돌아가기')
+
+            a =int(input())
+            if a == 1:
+                Dynamic.fibo_call()
+
             elif a ==99:
                 Greedy.turn()
 # Press the green button in the gutter to run the script.
